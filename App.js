@@ -4,11 +4,12 @@ import { StyleSheet, Text, View, Animated} from 'react-native';
 class App extends React.Component{
   constructor(props){
     super(this.props)
+    this.position = new Animated.ValueXY(0,0);
   }
   render(){
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <View style={styles.ball}/>
     </View>
   );
   }
@@ -23,4 +24,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  ball:{
+    height:50,
+    width:50,
+    BorderRadius: 30,
+    backgroundColor:'blue'
+  }
 });
