@@ -1,7 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Animated} from 'react-native';
 
 class App extends React.Component{
+  constructor(props){
+    super(this.props)
+  }
   render(){
   return (
     <View style={styles.container}>
